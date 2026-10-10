@@ -115,12 +115,6 @@ Pair similarity is the weighted mean (weights renormalised if a component is una
 - The cache and rate limiter are in memory and reset on restart.
 - Map tiles use the [OpenStreetMap standard raster service](https://operations.osmfoundation.org/policies/tiles/) and fonts (Google Fonts) need browser internet access. The map keeps the required visible attribution; use a suitable tile provider if deploying at significant scale.
 - A high score shows the pages differ, not that any country, source or search engine is biased.
-
-## Hackathon demo script (3 minutes)
-
-1. **Hook (20s):** "Does the internet give everyone the same answer?" Type *Is nuclear energy safe?* and pick US, India, Germany, Brazil, Japan, Nigeria.
-2. **Search the World (30s):** Click it and point at the live per-country progress; mention that nothing is faked, each row completes when SerpApi responds.
-3. **Score (30s):** Show the divergence number and the breakdown; stress that high means "different pages", not "wrong".
 4. **Map (30s):** Click the reddest country; show its unique sources and where it overlaps.
 5. **Compare (30s):** Compare the most different pair side by side; open a unique link to prove it is real.
 6. **Insights (20s):** Read one observation with its source link, then the "what cannot be concluded" list.
