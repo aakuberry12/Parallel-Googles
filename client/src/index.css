@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-ink text-mist font-sans antialiased;
+  background-image:
+    radial-gradient(900px 420px at 8% -8%, rgba(61, 123, 255, 0.16), transparent 60%),
+    radial-gradient(800px 420px at 100% 0%, rgba(139, 92, 246, 0.14), transparent 60%);
+  background-repeat: no-repeat;
+}
+h1, h2, h3 { @apply font-display; }
+:focus-visible { outline: 2px solid #3D7BFF; outline-offset: 2px; border-radius: 6px; }
+
+@layer components {
+  .card { @apply rounded-2xl border border-line bg-panel/80 backdrop-blur-sm; }
+  .btn { @apply inline-flex items-center gap-2 rounded-lg border border-line bg-raise px-3 py-2 text-sm text-mist transition-colors hover:border-volt/60 disabled:opacity-50; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-volt to-iris px-6 py-3 font-display font-bold text-white shadow-lg shadow-volt/20 transition-opacity hover:opacity-90 disabled:opacity-50; }
+  .chip { @apply inline-flex items-center rounded-full border border-line px-2.5 py-0.5 text-xs text-dim; }
+  .link { @apply text-volt underline-offset-2 hover:underline break-words; }
+}
+
+.leaflet-container { background: #080D1C; font-family: inherit; }
+.leaflet-control-attribution { background: rgba(8, 13, 28, 0.8) !important; color: #9AA3C7 !important; }
+.leaflet-control-attribution a { color: #9AA3C7 !important; }
+.leaflet-tooltip { background: #0F1630; color: #ECEBF5; border: 1px solid #232D55; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
