@@ -115,7 +115,3 @@ Pair similarity is the weighted mean (weights renormalised if a component is una
 - The cache and rate limiter are in memory and reset on restart.
 - Map tiles use the [OpenStreetMap standard raster service](https://operations.osmfoundation.org/policies/tiles/) and fonts (Google Fonts) need browser internet access. The map keeps the required visible attribution; use a suitable tile provider if deploying at significant scale.
 - A high score shows the pages differ, not that any country, source or search engine is biased.
-4. **Map (30s):** Click the reddest country; show its unique sources and where it overlaps.
-5. **Compare (30s):** Compare the most different pair side by side; open a unique link to prove it is real.
-6. **Insights (20s):** Read one observation with its source link, then the "what cannot be concluded" list.
-7. **Close (20s):** Export JSON, show history, and mention the demo-mode fallback and the methodology section.
